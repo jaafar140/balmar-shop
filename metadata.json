@@ -1,0 +1,9 @@
+{
+  "name": "BalMar",
+  "description": "Plateforme de revente de mode seconde main au Maroc. Sécurisée, locale et conviviale.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

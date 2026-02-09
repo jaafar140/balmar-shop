@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Connexion MongoDB
 // IMPORTANT : Remplacez <db_password> par votre vrai mot de passe de base de données
-const DEFAULT_URI = 'mongodb+srv://iriealbericcom_db_user:<db_password>@cluster0.tp9rvuv.mongodb.net/balmar_db?appName=Cluster0';
+const DEFAULT_URI = 'mongodb+srv://jaafarsellakh:Jaafar@2002@cluster0.jm9tx.mongodb.net/?appName=Cluster0';
 const MONGO_URI = process.env.MONGODB_URI || DEFAULT_URI;
 
 mongoose.connect(MONGO_URI)

@@ -1,16 +1,12 @@
-
 import { createClient } from '@supabase/supabase-js';
 
 // --- CONFIGURATION REAL DB ---
-// Instructions:
-// 1. Créez un projet sur https://supabase.com
-// 2. Copiez l'URL et la clé ANON publique ici
-// 3. L'application basculera automatiquement sur la vraie DB
+// Note : Avec Vite, on utilise import.meta.env et le préfixe VITE_
 
-const SUPABASE_URL = process.env.REACT_APP_SUPABASE_URL || '';
-const SUPABASE_KEY = process.env.REACT_APP_SUPABASE_ANON_KEY || '';
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || '';
+const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
-// Si les clés sont présentes, on active le mode CLOUD, sinon mode LOCAL
+// Si les clés sont présentes, on active le mode CLOUD
 export const isCloudMode = !!(SUPABASE_URL && SUPABASE_KEY);
 
 export const supabase = isCloudMode 
